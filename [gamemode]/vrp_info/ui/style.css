@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+@font-face {
+    font-family: gf;
+    src: url(akr.otf);
+}
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    
+
+
+}
+.choices li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: .3s;
+    color: white;
+    /* cursor:none; */
+}
+
+.clientInterfaceLogo {
+    position: absolute;
+    width: 8%;
+    top: 6%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
+
+.idIcon {
+    color: #00eeff;
+    opacity: .9;
+    padding: 5px;
+    border: 2px solid #ffffff15;
+      border-radius: .25vw;
+    background: #ffffff10;
+    font-size: 1.2vh;
+
+    font-family: gf;
+    text-align: right;
+    height: 5.8%;
+    box-shadow: 0 8px 32px 0 rgba( 165, 165, 165, 0.17 );
+}
+
+.idIcon2 {
+    color: #00eeff;
+    opacity: .9;
+    padding: 7px;
+    border: 2px solid #ffffff15;
+      border-radius: .25vw;
+    background: #ffffff10;
+    font-size: 1.2vh;
+    box-shadow: 0 8px 32px 0 rgba( 165, 165, 165, 0.17 ); 
+    /* backdrop-filter: blur( 8.5px ); */
+    /* -webkit-backdrop-filter: blur( 8.5px ); */
+    /* border-radius: 10px; */
+    font-family: gf;
+    text-align: right;
+    height: 12%;
+    box-shadow: 0 8px 32px 0 rgba( 165, 165, 165, 0.17 );
+}
+
+.topInterface {
+    position: absolute;
+    display: flex;
+    /* height: 21%; */
+    /* width: 11%; */
+    text-align: right;
+    top: 3%;
+    left: 88%;
+    font-size: 2.3vh;
+}
+
+.topText {
+    position: relative;
+    margin-top: 3.5%;
+    color: rgba(202, 201, 201, 0.63);
+    margin-left: 4%;
+    text-align: right;
+    font-family: gf;
+    font-size: 1.5vh;
+}
+
+.cashMoney {
+    position: absolute;
+    display: flex;
+    top: 9.2%;
+    right: 1%;
+    text-align: right;
+    font-family: gf;
+    color: rgba(202, 201, 201, 0.63);
+    
+
+    font-size: 2vh;
+    letter-spacing: .5px;
+}
+
+.diamante {
+    position: absolute;
+    display: flex;
+    top: 12.6%;
+    color: rgba(202, 201, 201, 0.63);
+    right: 1%;
+    text-align: right;
+    font-family: gf;
+    font-size: 2vh;
+    letter-spacing: .5px;
+}
+
+.ico {
+    position: absolute;
+    display: flex;
+    top: 91%;
+    left: 16.2%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.textDown1 {
+    position: absolute;
+    display: flex;
+    top: 91.5%;
+    left: 18.3%;
+    text-align: left;
+
+    font-family: gf;
+    font-size: 1.6vh;
+    letter-spacing: .5px;
+}
+
+.textDown2 {
+    position: absolute;
+    display: flex;
+    top: 92.5%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.3vh;
+    color: rgba(223, 223, 223, 0.726);
+    /* color: white; */
+    letter-spacing: .5px;
+}
+
+.ico2 {
+    position: absolute;
+    display: flex;
+    top: 85%;
+    left: 16.2%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+#icon {
+    padding: 3px 5px 3px 5px;
+    border: 2px solid #ffffff15;
+      border-radius: .25vw;
+    background: #ffffff10;
+    font-size: 1.1vh;
+}
+
+.textDown3 {
+    position: absolute;
+    display: flex;
+    top: 84.8%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.6vh;
+    letter-spacing: .5px;
+}
+
+.textDown4 {
+    position: absolute;
+    display: flex;
+    top: 86.7%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.3vh;
+    color: rgba(223, 223, 223, 0.726);
+    /* color: white; */
+    letter-spacing: .5px;
+}
+
+.ico4 {
+    position: absolute;
+    display: flex;
+    top: 80.8%;
+    left: 16.2%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.textDown5 {
+    position: absolute;
+    display: flex;
+    top: 80.5%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.6vh;
+    letter-spacing: .5px;
+}
+
+.textDown6 {
+    position: absolute;
+    display: flex;
+    top: 82.5%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.3vh;
+    color: rgba(223, 223, 223, 0.726);
+    /* color: white; */
+    letter-spacing: .5px;
+}
+
+.ico5 {
+    position: absolute;
+    display: flex;
+    top: 95.4%;
+    left: 16.2%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.ico6{
+    position: absolute;
+    display: flex;
+    top: 94%;
+    color:#00eeff;
+    left: 4%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.ico7{
+    position: absolute;
+    display: flex;
+    top: 94%;
+    color: #00eeff;
+    left: 6.5%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.ico8 {
+    position: absolute;
+    display: flex;
+    top: 94%;
+    color: #00eeff;
+    left: 9%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.ico9 {
+    position: absolute;
+    display: flex;
+    top: 94%;
+    color: #00eeff;
+    left: 23.5%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.8vh;
+    letter-spacing: .5px;
+}
+
+.textDown9 {
+    position: absolute;
+    display: flex;
+    top: 97%;
+    color: rgba(202, 201, 201, 0.63);
+    text-align: center;
+    left: 4.2%;
+    font-family: gf;
+    font-size: 1.4vh;
+    letter-spacing: .5px;
+}
+
+.textDown10 {
+    position: absolute;
+    display: flex;
+    top: 97%;
+    color: rgba(202, 201, 201, 0.63);
+    text-align: center;
+    left: 6.7%;
+    font-family: gf;
+    font-size: 1.4vh;
+    letter-spacing: .5px;
+}
+
+.textDown11 {
+    position: absolute;
+    display: flex;
+    top: 97%;
+    color: rgba(202, 201, 201, 0.63);
+    text-align: center;
+    left: 9.2%;
+    font-family: gf;
+    font-size: 1.4vh;
+    letter-spacing: .5px;
+}
+
+.textDown12 {
+    position: absolute;
+    display: flex;
+    top: 97%;
+    color: rgba(202, 201, 201, 0.63);
+    text-align: center;
+    left: 11.7%;
+    font-family: gf;
+    font-size: 1.4vh;
+    letter-spacing: .5px;
+}
+
+.textDown7 {
+    position: absolute;
+    display: flex;
+    top: 95.8%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.6vh;
+    letter-spacing: .5px;
+}
+
+.textDown8 {
+    position: absolute;
+    display: flex;
+    top: 96.9%;
+    left: 18.3%;
+    text-align: left;
+    font-family: gf;
+    font-size: 1.3vh;
+    color: rgba(223, 223, 223, 0.726);
+    /* color: white; */
+    letter-spacing: .5px;
+}
+
+.icon3 {
+    position: absolute;
+    left: 22.2%;
+    top: 84.933333333333333vh;
+    color: #00eeff;
+    text-shadow: 0px 0px 16px #00eeff;
+    font-size: 1.0375vw;
+}
+
+.pdtext {
+    position: absolute;
+    left: 17.97708333333333vw;
+    top: 93.133333333333333vh;
+    color: rgba(255, 255, 255, 0.908);
+    font-size: .7975vw;
+    font-family: gf;
+}
+
+.timer {
+    position: absolute;
+    left: 17.97708333333333vw;
+    top: 94.733333333333333vh;
+    color: rgba(214, 212, 212, 0.599);
+    font-size: .7975vw;
+    font-family: gf;
+}
+
+.payday1 {
+    position: absolute;
+    left: 17.97708333333333vw;
+    top: 87.433333333333333vh;
+    color: rgba(255, 255, 255, 0.908);
+    font-size: .7975vw;
+    font-family: gf;
+}
+
+.payday2 {
+    position: absolute;
+    left: 17.97708333333333vw;
+    top: 89.013333333333333vh;
+    color: rgba(214, 212, 212, 0.599);
+    font-size: .7975vw;
+    font-family: gf;
+}
+
+@keyframes admin {
+    from {top: -120px;};
+    to {top: 0px;};
+}
+
+@keyframes admin2 {
+    from {opacity: 0;};
+    to {opacity: 1;};
+}
+
+.adminAnnouncementContainer {
+    position: absolute;
+    width: 99.905833333333333vw;
+    height: 17.5333333333333335vh;
+    background: rgb(5,21,37);
+    background: rgb(5,21,37);
+    background: linear-gradient(0deg, rgba(5,21,37,0) 16%, rgba(0, 132, 255, 0.309) 100%);
+    border: 1px solid rgba(197, 197, 197, 0.18);
+    text-align: center;
+    border-bottom: 0px solid transparent;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 248, 34, 0), rgba(0, 132, 255, 0.489), rgba(56,2,155,0));
+    border-image-slice: 1;
+    animation: admin2 1.6s;
+}
+
+.adminTitle {
+    position: relative;
+    text-align: center;
+    top: 1.833333333333333vh;
+    color: white;
+    font-size: 1.4375vw;
+    font-family: gf;
+    letter-spacing: .7px;
+    animation: admin 1.6s;
+}
+
+.bt {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 248, 34, 0), rgba(0, 132, 255, 0.489), rgba(56,2,155,0));
+    border-image-slice: 1;
+    letter-spacing: 1.3px;
+}
+
+.bt2 {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 248, 34, 0), rgba(0, 132, 255, 0.489), rgba(56,2,155,0));
+    border-image-slice: 1;
+    letter-spacing: 1.3px;
+}
+
+.adminSend {
+    color: rgba(159, 156, 156, 0.5);
+    font-size: .8375vw;
+    font-family: gf;
+    letter-spacing: .2px;
+}
+
+.adminMessage {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: .9375vw;
+    font-family: gf;
+    letter-spacing: .2px;
+    top: 1.833333333333333vh;
+    width: 5px;
+    height: 5px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.641);
+}
+
+@keyframes ann {
+    from {opacity: 0;right: -21.67708333333333vw;};
+    to {opacity: 1;right: 1.67708333333333vw;};
+}
+
+
+.announcement {
+    position: absolute;
+    right: 1.67708333333333vw;
+    top: 12vw;
+    width: 19.905833333333333vw;
+    background: rgba( 255, 255, 255, 0.15 );
+    border-radius: 10px;
+    animation: ann 1.8s;
+    padding: 20px 0px 20px 0px;
+    background: rgb(5,21,37);
+    background: linear-gradient(309deg, rgba(5,21,37,0) 16%, rgba(0, 132, 255, 1) 100%);
+}
+
+.annTitle {
+    position: relative;
+    color: white;
+    left: 1.47708333333333vw;
+    font-family: gf;
+    letter-spacing: 1px;
+}
+
+.annSender {
+    position: relative;
+    color: rgba(173, 172, 172, 0.571);
+    left: 1.47708333333333vw;
+    font-family: gf;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.annMessage {
+    position: relative;
+    color: rgba(255, 255, 255, .871);
+    left: 1.47708333333333vw;
+    width: 325px;
+    font-family: gf;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+.eventAnnouncementContainer {
+    position: absolute;
+    width: 99.905833333333333vw;
+    height: 17.5333333333333335vh;
+    background: rgb(5,21,37);
+    background: rgb(5,21,37);
+    background: linear-gradient(0deg, rgba(5,21,37,0) 16%, rgba(0, 132, 255, 1) 100%);
+    border: 1px solid rgba(197, 197, 197, 0.18);
+    text-align: center;
+    border-bottom: 0px solid transparent;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 248, 34, 0), rgba(0, 132, 255, 1), rgba(56,2,155,0));
+    border-image-slice: 1;
+    animation: admin2 1.6s;
+}

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+<div id="all">
+ <div id="wallet">
+     <img id="walletimg" src="black.png" width="100%" height="100%">
+ </div>
+ 
+ <div onclick="select('id')" id="id">
+     <div id="idflow">
+        <div id="id_info">
+        </div>
+     <img src="idcard.png" onmouseover="slider('id')" onmouseout="slider('id_off')" width="90%">
+    </div>
+ </div>
+ <div id="driver-license">
+    <div id="driverflow">
+        <div id="driver_info">
+        </div>
+    <img src="driver_license.png" width="95%">
+   </div>
+ </div>
+<div id="job-license">
+    <div id="jobflow">
+        <p id="categorii">Cat. </p>
+        <p id="permis">B</p>
+        <p id="motor">A</p>
+        <p id="camion">C</p>
+        <p id="iban">CNP: 1234567890123</p>
+    <img id="jobimg" src="card.png" width="95%">
+   </div>
+</div>
+<div onclick="select('dollar')" id="dollar">
+    <div id="dollarflow">
+    <img id="jobimg" onmouseover="slider('dollar')" onmouseout="slider('dollar_off')" src="dollar.png" width="65% ">
+   </div>
+</div>
+<div onclick="showw()" id="show">
+    <img src="share.png" width="100%" height="100%">
+</div>
+<div id="money">
+<img src="money.png" width="2%" height="4%">
+<p id="moneyt" style="font-size: 100%; color: rgb(255, 255, 255);position: absolute;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;top:60.7%;left:3%" >0
+</div>
+</p>
+</div>
+<div id="showcard">
+    <img id="showimg" src="idcard.png" width="100%" height="100%">
+        <div id="show_info">
+            <p id="show_name" class="name">Baran Kaya</p>
+            <p id="show_sex" class="sex">Male</p>
+            <p id="show_date" class="date">01.01.2022</p>
+            <p id="show_height" class="height">150</p>
+            <p id="show_sign" class="sign">Baran Kaya</p>
+        </div>
+        <p style="font-size: 150%;font-family: Arial, Helvetica, sans-serif;color:white;position: absolute;top:90%;left:25%">Press (N) For Exit</p>
+    </div>
+</body>
+</html>

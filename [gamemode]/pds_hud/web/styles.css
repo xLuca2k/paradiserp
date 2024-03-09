@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+    background-size: cover;
+     cursor: none;
+}
+
+.paradiserp {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+  right: 1vw;
+  top: .9vw;
+}
+
+.paradiserp > .userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .3vw;
+}
+
+.paradiserp > .userInfo > .dataInfo { 
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: .3vw;
+}
+
+.paradiserp > .userInfo > .dataInfo span {
+  color:rgba(128, 233, 249, 0.514);
+  font-size: 0.8vw;
+}
+
+.paradiserp > .userInfo > .dataInfo i {
+  color:rgba(128, 233, 249, 0.514);
+  font-size: 0.8vw;
+}
+
+.paradiserp > .userInfo > .idJucator {
+  color:rgba(128, 233, 249, 0.514);
+  font-size: 0.8vw;
+}
+
+.paradiserp > .userInfo > .dataPing {
+  color:rgba(128, 233, 249, 0.514);
+  font-size: 0.8vw;
+}

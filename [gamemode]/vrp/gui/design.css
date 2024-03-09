@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  text-align:center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.console{
+  background-color: white;
+  color: white;
+  font-weight: 700;
+}
+.menu {   
+  display: block;
+  height: 430px;
+  width: 280px;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(6, 6, 6, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
+  right: 100%;
+  transform: translate(0,85%);
+  border-bottom: 3px #00ffff solid;
+  margin-left: 140vh;
+  margin-top: 13.5vh;
+}
+
+.menu > * {
+  
+  color:rgba(255, 255, 255, 0.95);
+  opacity:0.8;
+  position: absolute;
+}
+
+
+.menu_description {
+  position:absolute;
+  border-radius: 5px;
+  background-color: rgba(6, 6, 6, 0.25);
+  padding: 15px;
+  margin-left: 0vh;
+  margin-top: -20vh;
+  transform: translate(-270%,85%);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 20px #00ffff; 
+}
+
+.menu h1{
+  opacity:0;
+}
+
+.choices{
+  display: block;
+  overflow: auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.choices::-webkit-scrollbar{ 
+  display: none;
+  float: center;
+}
+
+.choices div{
+  padding: 12.5px;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: rgb(255, 255, 255);  
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.choices .selected{
+  background-color: rgb(0, 0, 0);
+  color: #00ffff;
+  border-left: 3px solid #00ffff;
+  text-shadow: 1px 1px 20px #00ffff; 
+}
+.progressbar{
+  position: absolute;
+}
+
+.progressbar .inner{
+}
+
+.progressbar .label{
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+.wprompt{
+	background-color: rgba(6, 6, 6, 0.95);
+  box-shadow: 1px 1px 10px 1px #00ffff;
+  color: #00ffff;  
+  width: 280px;
+  height: 180px;
+  border-radius: .25px .25px .25px .25px;
+  display: flex;
+  padding: 7px;
+  flex-direction: column;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 65vh;
+  margin-top: -10vh;
+}
+
+.wprompt h1{
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.wprompt textarea{
+  outline: none !important;
+	background-color: rgba(6, 6, 6, 0.95);
+  color: white;
+  width: 400px;
+  height: 140px;
+  border: 1px solid #00ffff;
+  box-shadow: inset 1px 1px 18px 1px #000000;
+  border-radius: .25px .25px .25px .25px;
+  flex: 1;
+  width: 100%;
+  padding: 12px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+
+.wprompt textarea:focus{
+  outline: none !important;
+}
+
+.wprompt .help{
+  font-size: 12px;
+  padding: 3px;
+  text-transform: uppercase;
+}
+.request_manager{
+  position: absolute;
+  bottom: -1px;
+  right: 25px;
+  text-align: right;
+}
+
+.request_manager div{
+  margin-bottom: 0px;
+}
+
+.request_manager div > span{
+  background-color: #262626;
+  border: 1px solid #262626;
+  box-shadow: inset 1px 1px 18px 1px #262626;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 25px;
+  color: white;
+  margin-bottom: -1px;
+  font-weight: 700;
+  padding: 5px;
+  text-align: center;
+}
+
+.request_manager .yes{
+  padding-left: 15px;
+  color: rgb(0,255,0);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.request_manager .no{
+  color: rgb(255,0,0);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.announce{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 780px;
+  height: 130px;
+  padding: 10px;
+  margin-left: -400px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-shadow: 1px 1px white;
+  color: black;
+  display: none;
+  opacity: 0.80;
+} 
+
+
+/* Safezone */
+
+.safezoneText{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  animation: apariDeSusInJOS .5s;
+  animation-fill-mode: forwards;
+  margin-top: 2%;
+}
+
+.safezoneText i{
+  font-size: 2.2vw;
+  color: white;
+  text-shadow: 0 0 15px #27b7caa6;
+}
+
+.safezoneText .textArea{
+  animation: fsanim .5s;
+  font-size: 2.5vw;
+  font-family: 'Smooch Sans';
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 0 15px #27b7caa6;
+}
+
+@keyframes fsanim {
+from {
+  font-size: .5vw;
+} to {
+  font-size: 2.5vw;
+}
+}
+
+@keyframes apariDeSusInJOS{
+  from {
+          top: 0.2%;
+  } to {
+          top: 5%;
+  }
+}
